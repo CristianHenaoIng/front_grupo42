@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--Cargar estilos-->
+    <link rel="stylesheet" href="./styles/create_user.css" />
+    <!--Cargar CDN de bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+        integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous">
+        </script>
+
+</head>
+
+<body>
+    <!--Cabecera-->
+    <header>
+        <nav class=" navbar navbar-expand- navbar-light bg-primary data-bs-toggle="dark>
+            <!--<h2 class="titulo"> Usuarios registrados</h2>-->
+            <!-- Navbar content -->
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">USUARIOS GRUPO 42</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                        <a class="nav-link active" href="#">Registrar usuario</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <!--Contenido-->
+    <main>
+        <!--Formulario-->
+        <!--Contenedor de formulario-->
+        <section id="form-create-user">
+            <form onsubmit="get_data_form(event)">
+            <label for="input_nombre" class="form-label">Nombre*: </label>
+            <input id="input_nombre" class="form-control" type="text" placeholder="Mi nombre" name="nombre"/> <!--Required al final-->
+            <label for="input_apellido" class="form-label">Apellido*: </label> <!--Required al final-->
+            <input id="input_apellido" class="form-control" type="text" placeholder="Mi Apellido" name="apellido"/> <!--Required al final-->
+            <label for="input_email" class="form-label">Email*: </label> <!--Required al final-->
+            <input id="input_email" class="form-control" type="email" placeholder="Mi Email" name="email"/> <!--Required al final-->
+            <label for="input_fecha_nacimiento" class="form-label">Fecha de nacimiento*:</label> <!--Required al final-->
+            <input id="input_fecha_nacimiento" class="form-control" type="date" name="fecha_nacimiento" /> <!--Required al final-->
+            <label for="input_foto" class="form-label">Foto: </label>
+            <input id="input_foto" class="form-control" type="text" name="foto"/> 
+            <!--<input id="input_foto" class="form-control" type="file" name="foto"/>-->
+            <!--Boton de crear-->
+            <div id="boton-crear">
+                <button class = "btn btn-primary" type="submit" id="btn">
+                    Crear
+                </button>
+            </div>       
+            </form>
+            
+        </section>
+    </main>
+</body>
+
+<!--Cargar scripts-->
+<script src="./scripts/form.js"></script>
+</html>

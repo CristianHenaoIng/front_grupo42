@@ -1,0 +1,29 @@
+/* 
+cambiar el tamaño, section contiene el form y el form contiene inputs
+section form permite acceder a elemento de section como elementos anidados
+*/
+
+#form-create-user form {
+    max-width: 400px;
+    min-width: 300px;
+}
+
+#form-create-user {
+    border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+#boton-crear {
+    /*text-align: center;*/
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.titulo {
+    text-align: center;
+    color: white;
+}

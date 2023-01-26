@@ -1,0 +1,41 @@
+.titulo {
+    text-align: center;
+}
+
+table {
+    text-align: center;
+}
+
+tr, td, thead, th, table {
+    border: 1px solid rgb(101, 111, 241);    
+}
+
+table {
+    width: 100%;
+}
+
+td {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#cont-table {
+    padding: 5%;
+    /* border: 1px solid red; */
+}
+
+#crear-usuario {
+    /* border: 1px solid green; */
+    padding-top: 20px;
+    padding-left: 45%;    
+    padding-bottom: 10%;
+}
+
+/* #section-carousel{
+    padding: 50px; 
+}
+ */
+
+table tbody tr td img{
+    width: 100px;
+}
